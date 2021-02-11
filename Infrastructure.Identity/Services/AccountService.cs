@@ -72,7 +72,6 @@ namespace Infrastructure.Identity.Services
         {
             var userClaims = await _userManager.GetClaimsAsync(user);
             var roles = await _userManager.GetRolesAsync(user);
-
             var roleClaims = new List<Claim>();
 
             for (int i = 0; i < roles.Count; i++)

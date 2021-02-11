@@ -18,10 +18,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Features\Products\Commands\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <ProjectReference Include="..\Core\Domain\Domain\Domain.csproj" />
 	</ItemGroup>
 

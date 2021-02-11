@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Application.Features.Products.Commands.CreateProduct;
+using Application.Features.Products.Commands.DeleteProductById;
 using Application.Features.Products.Queries.GetAllProducts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 using WebApplication.Controllers;
 
 namespace WebApplication.Controller.v1
@@ -14,12 +13,43 @@ namespace WebApplication.Controller.v1
     {
         // GET: api/<controller>
         [HttpGet]
-        [Authorize]
         public async Task<IActionResult> Get([FromQuery] GetAllProductsParameter filter)
         {
-            var obj = new GetAllProductsQuery() { PageSize = filter.PageSize, PageNumber = filter.PageNumber };
-            var result = await Mediator.Send(obj);
-            return Ok(result);
+            return Ok(await Mediator.Send(new GetAllProductsQuery() { PageSize = filter.PageSize, PageNumber = filter.PageNumber }));
+        }
+
+        // GET api/<controller>/5
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            return Ok(await Mediator.Send(new GetProductByIdQuery { Id = id }));
+        }
+        // POST api/<controller>
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Post(CreateProductCommand command)
+        {
+            return Ok(await Mediator.Send(command));
+        }
+
+        // PUT api/<controller>/5
+        [HttpPut("{id}")]
+        [Authorize]
+        public async Task<IActionResult> Put(int id, UpdateProductCommand command)
+        {
+            if (id != command.Id)
+            {
+                return BadRequest();
+            }
+            return Ok(await Mediator.Send(command));
+        }
+
+        // DELETE api/<controller>/5
+        [HttpDelete("{id}")]
+        [Authorize]
+        public async Task<IActionResult> Delete(int id)
+        {
+            return Ok(await Mediator.Send(new DeleteProductByIdCommand { Id = id }));
         }
     }
 }
