@@ -23,6 +23,7 @@ namespace WebApplication.Controllers
         {
             return Ok(await _accountService.AuthenticateAsync(request, GenerateIPAddress()));
         }
+        #region private
         private string GenerateIPAddress()
         {
             if (Request.Headers.ContainsKey("X-Forwarded-For"))
@@ -30,5 +31,6 @@ namespace WebApplication.Controllers
             else
                 return HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString();
         }
+        #endregion
     }
 }
