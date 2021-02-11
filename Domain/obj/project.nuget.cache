@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Dh1LHwpQSxGipq51+6vLBDJdDEt5+pdLb+PwT5zZOINol3zMqfx0pcbE4iFm9IUK6qDxO0T7AvaH20ReVrsyMA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nguyen Thanh Duc\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Nguyen Thanh Duc\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
