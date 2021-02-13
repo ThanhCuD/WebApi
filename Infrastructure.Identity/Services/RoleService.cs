@@ -18,7 +18,7 @@ namespace Infrastructure.Identity.Services
             _roleManager = roleManager;
         }
 
-        public async Task<Response<int>> CreateRoleAsync(CreateRoleRequest request)
+        public async Task<Response<string>> CreateRoleAsync(CreateRoleRequest request)
         {
             var role = await _roleManager.FindByNameAsync(request.Name);
             if (role != null)
@@ -30,10 +30,10 @@ namespace Infrastructure.Identity.Services
                 Name = request.Name
             };
             await _roleManager.CreateAsync(newRole);
-            return new Response<int>(newRole.Id);
+            return new Response<string>(newRole.Id);
         }
 
-        public async Task<Response<int>> DeleteRoleAsync(DeleteRoleRequest request)
+        public async Task<Response<string>> DeleteRoleAsync(DeleteRoleRequest request)
         {
             var role = await _roleManager.FindByIdAsync(request.Id);
             if (role == null)
@@ -41,7 +41,7 @@ namespace Infrastructure.Identity.Services
                 throw new ApiException("not found id");
             }
             await _roleManager.DeleteAsync(role);
-            return new Response<int>(role.Id);
+            return new Response<string>(role.Id);
         }
 
         public async Task<Response<IEnumerable<GetAllRoleResponse>>> GetRolesAsync()
@@ -58,6 +58,18 @@ namespace Infrastructure.Identity.Services
                 lst.Add(roleResponse);
             }
             return new Response<IEnumerable<GetAllRoleResponse>>(lst);
+        }
+
+        public async Task<Response<string>> UpdateRoleAsync(UpdateRoleRequest request)
+        {
+            var role = await _roleManager.FindByIdAsync(request.Id);
+            if (role == null)
+            {
+                throw new ApiException("not found id");
+            }
+            role.Name = request.Name;
+            await _roleManager.UpdateAsync(role);
+            return new Response<string>(role.Id);
         }
     }
 }

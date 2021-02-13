@@ -7,8 +7,9 @@ namespace Application.Interfaces
 {
     public interface IRoleService
     {
-        Task<Response<int>> CreateRoleAsync(CreateRoleRequest request);
+        Task<Response<string>> CreateRoleAsync(CreateRoleRequest request);
         Task<Response<IEnumerable<GetAllRoleResponse>>> GetRolesAsync();
-        Task<Response<int>> DeleteRoleAsync(DeleteRoleRequest request);
+        Task<Response<string>> DeleteRoleAsync(DeleteRoleRequest request);
+        Task<Response<string>> UpdateRoleAsync(UpdateRoleRequest request);
     }
 }

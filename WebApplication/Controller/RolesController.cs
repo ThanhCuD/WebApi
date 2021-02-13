@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Application.DTOs.Account;
+﻿using Application.DTOs.Account;
 using Application.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace WebApplication.Controllers
 {
@@ -32,6 +28,11 @@ namespace WebApplication.Controllers
         public async Task<IActionResult> DeleteRole(DeleteRoleRequest request)
         {
             return Ok(await _roleService.DeleteRoleAsync(request));
+        }
+        [HttpPost("updateRole")]
+        public async Task<IActionResult> UpdateRole(UpdateRoleRequest request)
+        {
+            return Ok(await _roleService.UpdateRoleAsync(request));
         }
         #region private
 
