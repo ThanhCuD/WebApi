@@ -1,4 +1,5 @@
-﻿using Application.Interfaces.Repositories;
+﻿using Application.Exceptions;
+using Application.Interfaces.Repositories;
 using Application.Wrappers;
 using AutoMapper;
 using Domain.Entities;
@@ -7,10 +8,11 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Application.Features.Products.Commands.CreatePerson
+namespace Application.Features.Products.Commands.UpdatePerson
 {
-    public partial class CreatePersonCommand : IRequest<Response<int>>
+    public partial class UpdatePersonCommand : IRequest<Response<int>>
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Gender { get; set; }
         public int LevelInParentage { get; set; }
@@ -21,7 +23,7 @@ namespace Application.Features.Products.Commands.CreatePerson
         public string BurialGround { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
-        public class CreatePersonCommandHandler : IRequestHandler<CreatePersonCommand, Response<int>>
+        public class CreatePersonCommandHandler : IRequestHandler<UpdatePersonCommand, Response<int>>
         {
             private readonly IPersonRepositoryAsync _personRepositoryAsync;
             private readonly IMapper _mapper;
@@ -31,11 +33,20 @@ namespace Application.Features.Products.Commands.CreatePerson
                 _mapper = mapper;
             }
 
-            public async Task<Response<int>> Handle(CreatePersonCommand request, CancellationToken cancellationToken)
+            public async Task<Response<int>> Handle(UpdatePersonCommand request, CancellationToken cancellationToken)
             {
-                var person = _mapper.Map<Person>(request);
-                await _personRepositoryAsync.AddAsync(person);
-                return new Response<int>(person.Id);
+                var person = _personRepositoryAsync.GetByIdAsync(request.Id);
+                if(person==null)
+                {
+                    throw new ApiException($"Not found this id: {request.Id}");
+                }
+                else
+                {
+                    var updatePerson = _mapper.Map<Person>(request);
+                    await _personRepositoryAsync.UpdateAsync(updatePerson);
+                    return new Response<int>(person.Id);
+                }
+                
             }
         }
     }

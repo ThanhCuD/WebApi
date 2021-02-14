@@ -61,10 +61,18 @@ namespace Infrastructure.Identity
                 {
                     OnAuthenticationFailed = c =>
                     {
-                        c.NoResult();
-                        c.Response.StatusCode = 500;
-                        c.Response.ContentType = "text/plain";
-                        return c.Response.WriteAsync(c.Exception.ToString());
+                        if (c.Exception.GetType() == typeof(SecurityTokenExpiredException))
+                        {
+                            c.Response.Headers.Add("Token-Expired", "true");
+                            return System.Threading.Tasks.Task.CompletedTask;
+                        }
+                        else
+                        {
+                            c.NoResult();
+                            c.Response.StatusCode = 500;
+                            c.Response.ContentType = "text/plain";
+                            return c.Response.WriteAsync(c.Exception.ToString());
+                        }
                     },
                     OnChallenge = context =>
                     {

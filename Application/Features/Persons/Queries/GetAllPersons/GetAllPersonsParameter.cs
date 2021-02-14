@@ -8,6 +8,6 @@ namespace Application.Features.Persons.Queries.GetAllPersons
 {
     public class GetAllPersonsParameter : RequestParameter
     {
-
+        public string Name { get; set; }
     }
 }
