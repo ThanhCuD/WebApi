@@ -12,3 +12,17 @@ C:\Users\Nguyen Thanh Duc\Desktop\personal\CodeNew\WebSiteAspNetCore\API\WebApi\
 C:\Users\Nguyen Thanh Duc\Desktop\personal\CodeNew\WebSiteAspNetCore\API\WebApi\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.csproj.CopyComplete
 C:\Users\Nguyen Thanh Duc\Desktop\personal\CodeNew\WebSiteAspNetCore\API\WebApi\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.dll
 C:\Users\Nguyen Thanh Duc\Desktop\personal\CodeNew\WebSiteAspNetCore\API\WebApi\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.pdb
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Infrastructure.Persistence.deps.json
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Infrastructure.Persistence.dll
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Infrastructure.Persistence.pdb
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.AssemblyInfo.cs
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.csproj.CopyComplete
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.dll
+C:\Users\Admin\Desktop\New folder\WebApi\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.pdb

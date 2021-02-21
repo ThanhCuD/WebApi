@@ -21,6 +21,7 @@ namespace Application.Features.Products.Commands.CreatePerson
         public string BurialGround { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
+        public int IdParent { get; set; }
         public class CreatePersonCommandHandler : IRequestHandler<CreatePersonCommand, Response<int>>
         {
             private readonly IPersonRepositoryAsync _personRepositoryAsync;

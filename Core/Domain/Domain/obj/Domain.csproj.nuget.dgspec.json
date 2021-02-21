@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Core\\Domain\\Domain\\Domain.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Core\\Domain\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Core\\Domain\\Domain\\Domain.csproj": {
+    "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Core\\Domain\\Domain\\Domain.csproj": {
       "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Core\\Domain\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Core\\Domain\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Core\\Domain\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Nguyen Thanh Duc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Core\\Domain\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Core\\Domain\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Core\\Domain\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Nguyen Thanh Duc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

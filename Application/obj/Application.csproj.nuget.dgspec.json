@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Application\\Application.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Application\\Application.csproj": {
+    "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Application\\Application.csproj": {
       "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Nguyen Thanh Duc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Application\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Nguyen Thanh Duc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +31,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Core\\Domain\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Core\\Domain\\Domain\\Domain.csproj"
+              "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Core\\Domain\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Core\\Domain\\Domain\\Domain.csproj"
               }
             }
           }
@@ -95,21 +98,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Core\\Domain\\Domain\\Domain.csproj": {
+    "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Core\\Domain\\Domain\\Domain.csproj": {
       "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Core\\Domain\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Core\\Domain\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Core\\Domain\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Nguyen Thanh Duc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nguyen Thanh Duc\\Desktop\\personal\\CodeNew\\WebSiteAspNetCore\\API\\WebApi\\Core\\Domain\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Core\\Domain\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\New folder\\WebApi\\Core\\Domain\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Nguyen Thanh Duc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -148,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
