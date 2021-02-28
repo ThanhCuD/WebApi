@@ -29,7 +29,9 @@ namespace Application.Features.Persons.Queries.GetAllPersons
             var validFilter = _mapper.Map<GetAllPersonsParameter>(request);
             var persons = await _repository.GetPagedReponseAsync(validFilter.PageNumber, validFilter.PageSize,validFilter.Name);
             var viewModel = _mapper.Map<IEnumerable<GetAllPersonsViewModel>>(persons);
-            return new PagedResponse<IEnumerable<GetAllPersonsViewModel>>(viewModel, validFilter.PageNumber, validFilter.PageSize);
+            var total = await _repository.TotalCount();
+            var totalPage = total % validFilter.PageSize == 0? total / validFilter.PageSize : total / validFilter.PageSize+ 1;
+            return new PagedResponse<IEnumerable<GetAllPersonsViewModel>>(viewModel, validFilter.PageNumber, validFilter.PageSize, totalPage);
         }
     }
 }

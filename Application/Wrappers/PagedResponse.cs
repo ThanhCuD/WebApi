@@ -8,8 +8,9 @@ namespace Application.Wrappers
     {
         public int PageNumber { get; set; }
         public int PageSize { get; set; }
+        public int TotalData { get; set; }
 
-        public PagedResponse(T data, int pageNumber, int pageSize)
+        public PagedResponse(T data, int pageNumber, int pageSize,int totalData = 0)
         {
             this.PageNumber = pageNumber;
             this.PageSize = pageSize;
@@ -17,6 +18,7 @@ namespace Application.Wrappers
             this.Message = null;
             this.Succeeded = true;
             this.Errors = null;
+            this.TotalData = totalData;
         }
     }
 }

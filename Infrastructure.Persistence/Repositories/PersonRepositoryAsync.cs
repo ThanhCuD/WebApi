@@ -27,5 +27,9 @@ namespace Infrastructure.Persistence.Repositories
                .AsNoTracking()
                .ToListAsync();
         }
+        public async Task<int> TotalCount()
+        {
+            return await _persons.CountAsync();
+        }
     }
 }
